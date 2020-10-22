@@ -1,0 +1,8 @@
+version: "3.7"
+services:
+  apt-cacher-ng:
+    build: .
+    ports:
+      - "3142:3142"
+    volumes:
+      - ./cache:/var/cache/apt-cacher-ng
